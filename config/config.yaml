@@ -1,0 +1,8 @@
+temporal_host_port: localhost:7233
+producer_number: 2
+consumer_number: 2
+zookeeper_host_port: localhost:2181
+kafka_brokers:
+  - localhost:32400
+  - localhost:32401
+  - localhost:32402

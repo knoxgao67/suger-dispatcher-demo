@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"flag"
 	"log"
 	"sync"
 
@@ -21,8 +22,12 @@ import (
 var cleanFn []func()
 var mutex sync.Mutex
 
+var cfgFile = flag.String("cfg", "./config/config.yaml", "config filename")
+
 func main() {
-	config.Init()
+	flag.Parse()
+	config.Init(*cfgFile)
+
 	zk.Init()
 	kafka.Init()
 	temporal_client.Init()

@@ -17,7 +17,7 @@ func GetClient() client.Client {
 func Init() {
 	var err error
 	c, err = client.Dial(client.Options{
-		HostPort: config.GetConfig().HostPort,
+		HostPort: config.GetConfig().TemporalHostPort,
 	})
 	if err != nil {
 		log.Fatalln("Unable to create Temporal client.", err)
