@@ -3,6 +3,7 @@ repos:
     rev: v4.4.0
     hooks:
       - id: check-yaml
+        exclude: ^helm_chart/
       - id: trailing-whitespace
       - id: check-added-large-files
   - repo: https://github.com/golangci/golangci-lint # golangci-lint hook repo

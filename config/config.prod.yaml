@@ -1,0 +1,6 @@
+temporal_host_port: temporaltest-frontend-headless:7233
+producer_number: 100
+consumer_number: 100
+zookeeper_host_port: kafka-zookeeper-headless:2181
+kafka_brokers:
+  - kafka-headless:9092

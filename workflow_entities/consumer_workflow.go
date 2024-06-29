@@ -42,6 +42,5 @@ func MessageConsumerWorkflow(ctx workflow.Context, param MessageConsumerParam) (
 func HandleMessage(ctx context.Context, param MessageConsumerParam) (*MessageConsumerResult, error) {
 	// handle message
 	result := &MessageConsumerResult{Message: "Handled#" + param.Message}
-	time.Sleep(time.Second * 5)
 	return result, nil
 }

@@ -58,6 +58,7 @@ func loadConfig(filePath string) error {
 		return err
 	}
 	cfg = tmpCfg
+	fmt.Println("use new cfg: ", cfg)
 	return nil
 }
 

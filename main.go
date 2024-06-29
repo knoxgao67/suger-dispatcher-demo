@@ -22,7 +22,7 @@ import (
 var cleanFn []func()
 var mutex sync.Mutex
 
-var cfgFile = flag.String("cfg", "./config/config.yaml", "config filename")
+var cfgFile = flag.String("f", "./config/config.yaml", "config filename")
 
 func main() {
 	flag.Parse()
@@ -79,7 +79,7 @@ func startSchedule(ctx context.Context, param workflow_entities.SetupParams) {
 			},
 		})
 		if err != nil {
-			log.Fatalln("Unable to create schedule for module A", err)
+			log.Fatalln("Unable to create schedule for module", err)
 		}
 	}
 

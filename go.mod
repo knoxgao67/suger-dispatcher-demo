@@ -1,6 +1,6 @@
 module github.com/knoxgao67/temporal-dispatcher-demo
 
-go 1.22.4
+go 1.20
 
 require (
 	github.com/IBM/sarama v1.43.2
