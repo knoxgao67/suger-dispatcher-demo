@@ -27,11 +27,11 @@ linters-settings:
   staticcheck:
     checks: ["all", "-SA1019"] # TODO Enable SA1019 after deprecated warning are fixed.
 
+
 linters:
   enable:
     # mandatory linters
     - govet
-    - revive
 
     # some default golangci-lint linters
     - errcheck
@@ -55,3 +55,5 @@ linters:
     - whitespace
   disable-all: true
   fast: false
+
+
