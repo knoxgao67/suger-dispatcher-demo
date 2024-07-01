@@ -75,7 +75,7 @@ func startSchedule(ctx context.Context, param workflow_entities.SetupParams) {
 				ID:        workflowID,
 				Workflow:  workflowEntity,
 				Args:      []interface{}{param},
-				TaskQueue: common.DispatcherQueue,
+				TaskQueue: common.DispatcherQueue, // TODO 单独设置queue，便于更加灵活的控制？
 			},
 		})
 		if err != nil {
